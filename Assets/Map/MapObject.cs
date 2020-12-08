@@ -12,9 +12,9 @@ public class MapObject : MonoBehaviour
     void Start()
     {
         // snap position to integer values
-        Vector3 pos = this.transform.position;
+      /*  Vector3 pos = this.transform.position;
         Vector3 newPos = new Vector3((int)(pos.x - 0.5), (int)(pos.y - 0.5), 0);
-        this.transform.position = newPos;
+        this.transform.position = newPos;*/
     }
 
     // Update is called once per frame

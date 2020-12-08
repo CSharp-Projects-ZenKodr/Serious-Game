@@ -54,10 +54,19 @@ public class Map : MonoBehaviour
             if (data.collisionEnabled)
             {
                 Vector3 p = obj.transform.position-this.transform.position;
-                if (Mathf.Abs(p.x-newPosition.x)<0.01 && Mathf.Abs(p.y-newPosition.y)<0.01)
+                int width = (int)obj.transform.localScale.x;
+                int height = (int) obj.transform.localScale.y;
+                for( int i =0; i< width; ++i)
                 {
-                    return false;
+                    for (int j =0; j < height; ++j)
+                    {
+                        if (Mathf.Abs(p.x +i - newPosition.x) < 0.01 && Mathf.Abs(p.y+j - newPosition.y) < 0.01)
+                        {
+                            return false;
+                        }
+                    }
                 }
+
             }
 
         }
