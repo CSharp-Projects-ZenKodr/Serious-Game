@@ -7,9 +7,11 @@ public class Map : MonoBehaviour
     public int height;
     public int width;
     public int c, invSpeed;
+    public bool moveU, moveD, moveL, moveR;
     public GameObject player;
     public GameObject objectListFather;
     private List<GameObject> objects;
+    public Animator animator;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +38,10 @@ public class Map : MonoBehaviour
     {
         c++;
         c = c % invSpeed;
+        animator.SetBool("moveU", Input.GetKey(KeyCode.UpArrow));
+        animator.SetBool("moveD", Input.GetKey(KeyCode.DownArrow));
+        animator.SetBool("moveL", Input.GetKey(KeyCode.LeftArrow));
+        animator.SetBool("moveR", Input.GetKey(KeyCode.RightArrow));
         MovePlayer();
         CallEvent();
     }
@@ -79,22 +85,7 @@ public class Map : MonoBehaviour
     void MovePlayer()
     {   
         Vector3 newPosition = player.transform.position- this.transform.position;
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-        {
-            newPosition.y += 1;
-        }
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-        {
-            newPosition.y -= 1;
-        }
-        if (Input.GetKeyDown(KeyCode.LeftArrow))
-        {
-            newPosition.x -= 1;
-        }
-        if (Input.GetKeyDown(KeyCode.RightArrow))
-        {
-            newPosition.x += 1;
-        }
+
         if (Input.GetKey(KeyCode.UpArrow) && c == invSpeed-1)
         {
             newPosition.y += 1;
