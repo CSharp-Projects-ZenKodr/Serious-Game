@@ -6,6 +6,7 @@ public class Map : MonoBehaviour
 {
     public int height;
     public int width;
+    public int c, invSpeed;
     public GameObject player;
     public GameObject objectListFather;
     private List<GameObject> objects;
@@ -23,7 +24,7 @@ public class Map : MonoBehaviour
             if (null == child) { continue; }
             objects.Add(child.gameObject);
         }
-
+        c = 0;
         //snap player position to integer values
         Vector3 pos = player.transform.position;
         Vector3 newPos = new Vector3((int)(pos.x - 0.5), (int)(pos.y - 0.5), 0);
@@ -33,6 +34,8 @@ public class Map : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        c++;
+        c = c % invSpeed;
         MovePlayer();
         CallEvent();
     }
@@ -80,15 +83,31 @@ public class Map : MonoBehaviour
         {
             newPosition.y += 1;
         }
-        else if (Input.GetKeyDown(KeyCode.DownArrow))
+        if (Input.GetKeyDown(KeyCode.DownArrow))
         {
             newPosition.y -= 1;
         }
-        else if (Input.GetKeyDown(KeyCode.LeftArrow))
+        if (Input.GetKeyDown(KeyCode.LeftArrow))
         {
             newPosition.x -= 1;
         }
-        else if (Input.GetKeyDown(KeyCode.RightArrow))
+        if (Input.GetKeyDown(KeyCode.RightArrow))
+        {
+            newPosition.x += 1;
+        }
+        if (Input.GetKey(KeyCode.UpArrow) && c == invSpeed-1)
+        {
+            newPosition.y += 1;
+        }
+        if (Input.GetKey(KeyCode.DownArrow) && c == invSpeed-1)
+        {
+            newPosition.y -= 1;
+        }
+        if (Input.GetKey(KeyCode.LeftArrow) && c == invSpeed-1)
+        {
+            newPosition.x -= 1;
+        }
+        if (Input.GetKey(KeyCode.RightArrow) && c == invSpeed-1)
         {
             newPosition.x += 1;
         }

@@ -36520,6 +36520,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   height: 129
   width: 140
+  c: 0
+  invSpeed: 20
   player: {fileID: 440828326}
   objectListFather: {fileID: 1704899145}
 --- !u!212 &859417830
@@ -39381,7 +39383,7 @@ GameObject:
   - component: {fileID: 1704899146}
   - component: {fileID: 1704899147}
   m_Layer: 0
-  m_Name: MapObjects
+  m_Name: Walls
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
