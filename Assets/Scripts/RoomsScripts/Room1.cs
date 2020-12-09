@@ -8,6 +8,7 @@ public class Room1 : Room
     // Start is called before the first frame update
     void Start()
     {
+        base.Start();
         index = 1;
     }
 
