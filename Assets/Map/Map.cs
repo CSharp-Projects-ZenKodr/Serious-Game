@@ -11,7 +11,23 @@ public class Map : MonoBehaviour
     public GameObject player;
     public GameObject objectListFather;
     private List<GameObject> objects;
-    public Animator animator;
+    public Animator characterAnimator;
+    public Animator DoorU1Animator;
+    public Animator DoorU2Animator;
+    public Animator DoorU3Animator;
+    public Animator DoorU4Animator;
+    public Animator DoorR1Animator;
+    public Animator DoorR2Animator;
+    public Animator DoorR3Animator;
+    public Animator DoorR4Animator;
+    public Animator DoorD1Animator;
+    public Animator DoorD2Animator;
+    public Animator DoorD3Animator;
+    public Animator DoorD4Animator;
+    public Animator DoorL1Animator;
+    public Animator DoorL2Animator;
+    public Animator DoorL3Animator;
+    public Animator DoorL4Animator;
 
     // Start is called before the first frame update
     void Start()
@@ -31,6 +47,11 @@ public class Map : MonoBehaviour
         Vector3 pos = player.transform.position;
         Vector3 newPos = new Vector3((int)(pos.x - 0.5), (int)(pos.y - 0.5), 0);
         player.transform.position = newPos;
+
+        DoorU1Animator.SetBool("isOpen", true);
+        DoorR1Animator.SetBool("isOpen", true);
+        DoorD1Animator.SetBool("isOpen", true);
+        DoorL1Animator.SetBool("isOpen", true);
     }
 
     // Update is called once per frame
@@ -38,10 +59,10 @@ public class Map : MonoBehaviour
     {
         c++;
         c = c % invSpeed;
-        animator.SetBool("moveU", Input.GetKey(KeyCode.UpArrow));
-        animator.SetBool("moveD", Input.GetKey(KeyCode.DownArrow));
-        animator.SetBool("moveL", Input.GetKey(KeyCode.LeftArrow));
-        animator.SetBool("moveR", Input.GetKey(KeyCode.RightArrow));
+        characterAnimator.SetBool("moveU", Input.GetKey(KeyCode.UpArrow));
+        characterAnimator.SetBool("moveD", Input.GetKey(KeyCode.DownArrow));
+        characterAnimator.SetBool("moveL", Input.GetKey(KeyCode.LeftArrow));
+        characterAnimator.SetBool("moveR", Input.GetKey(KeyCode.RightArrow));
         MovePlayer();
         CallEvent();
     }
