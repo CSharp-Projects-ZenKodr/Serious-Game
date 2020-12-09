@@ -740,7 +740,7 @@ GameObject:
   - component: {fileID: 141668072}
   - component: {fileID: 141668073}
   m_Layer: 0
-  m_Name: doorBrickBG
+  m_Name: doorD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -966,7 +966,7 @@ GameObject:
   m_Component:
   - component: {fileID: 219101958}
   m_Layer: 0
-  m_Name: DoorN2
+  m_Name: DoorU2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1937,7 +1937,7 @@ GameObject:
   - component: {fileID: 482913894}
   - component: {fileID: 482913895}
   m_Layer: 0
-  m_Name: doorBrickBG
+  m_Name: doorU4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35442,7 +35442,7 @@ GameObject:
   - component: {fileID: 553796564}
   - component: {fileID: 553796565}
   m_Layer: 0
-  m_Name: doorBrickBG
+  m_Name: doorU2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36389,7 +36389,7 @@ GameObject:
   - component: {fileID: 657497039}
   - component: {fileID: 657497040}
   m_Layer: 0
-  m_Name: doorBrickBG
+  m_Name: doorU1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36686,7 +36686,7 @@ GameObject:
   - component: {fileID: 696040314}
   - component: {fileID: 696040313}
   m_Layer: 0
-  m_Name: rightDoorClosed
+  m_Name: doorR1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36914,7 +36914,7 @@ GameObject:
   - component: {fileID: 748266277}
   - component: {fileID: 748266276}
   m_Layer: 0
-  m_Name: leftDoorClosed
+  m_Name: doorL4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -37408,7 +37408,23 @@ MonoBehaviour:
   moveR: 0
   player: {fileID: 440828326}
   objectListFather: {fileID: 1704899145}
-  animator: {fileID: 1386600830}
+  characterAnimator: {fileID: 1386600830}
+  DoorU1Animator: {fileID: 657497040}
+  DoorU2Animator: {fileID: 553796565}
+  DoorU3Animator: {fileID: 1886537858}
+  DoorU4Animator: {fileID: 482913895}
+  DoorR1Animator: {fileID: 696040313}
+  DoorR2Animator: {fileID: 1043867930}
+  DoorR3Animator: {fileID: 1311876921}
+  DoorR4Animator: {fileID: 1975658101}
+  DoorD1Animator: {fileID: 141668073}
+  DoorD2Animator: {fileID: 1580358273}
+  DoorD3Animator: {fileID: 1637349154}
+  DoorD4Animator: {fileID: 1945083323}
+  DoorL1Animator: {fileID: 1995012280}
+  DoorL2Animator: {fileID: 1631907128}
+  DoorL3Animator: {fileID: 1948196501}
+  DoorL4Animator: {fileID: 748266276}
 --- !u!212 &859417830
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -37942,7 +37958,7 @@ GameObject:
   m_Component:
   - component: {fileID: 978925299}
   m_Layer: 0
-  m_Name: DoorS1
+  m_Name: DoorD1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38329,7 +38345,7 @@ GameObject:
   - component: {fileID: 1043867931}
   - component: {fileID: 1043867930}
   m_Layer: 0
-  m_Name: rightDoorClosed
+  m_Name: doorR2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39572,7 +39588,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1304933283}
   m_Layer: 0
-  m_Name: DoorN1
+  m_Name: DoorU1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39605,7 +39621,7 @@ GameObject:
   - component: {fileID: 1311876922}
   - component: {fileID: 1311876921}
   m_Layer: 0
-  m_Name: rightDoorClosed
+  m_Name: doorR3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40480,7 +40496,7 @@ GameObject:
   - component: {fileID: 1580358272}
   - component: {fileID: 1580358273}
   m_Layer: 0
-  m_Name: doorBrickBG
+  m_Name: doorD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40675,7 +40691,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1607941232}
   m_Layer: 0
-  m_Name: DoorS2
+  m_Name: DoorD2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40804,7 +40820,7 @@ GameObject:
   - component: {fileID: 1631907129}
   - component: {fileID: 1631907128}
   m_Layer: 0
-  m_Name: leftDoorClosed
+  m_Name: doorL2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -40905,7 +40921,7 @@ GameObject:
   - component: {fileID: 1637349153}
   - component: {fileID: 1637349154}
   m_Layer: 0
-  m_Name: doorBrickBG
+  m_Name: doorD3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41667,7 +41683,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1764672038}
   m_Layer: 0
-  m_Name: DoorN3
+  m_Name: DoorU3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41698,7 +41714,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1764919994}
   m_Layer: 0
-  m_Name: DoorN4
+  m_Name: DoorU4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -44862,7 +44878,7 @@ GameObject:
   - component: {fileID: 1886537857}
   - component: {fileID: 1886537858}
   m_Layer: 0
-  m_Name: doorBrickBG
+  m_Name: doorU3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46767,7 +46783,7 @@ GameObject:
   - component: {fileID: 1945083322}
   - component: {fileID: 1945083323}
   m_Layer: 0
-  m_Name: doorConcreteBG
+  m_Name: doorD4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46868,7 +46884,7 @@ GameObject:
   - component: {fileID: 1948196502}
   - component: {fileID: 1948196501}
   m_Layer: 0
-  m_Name: leftDoorClosed
+  m_Name: doorL3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46969,7 +46985,7 @@ GameObject:
   - component: {fileID: 1975658102}
   - component: {fileID: 1975658101}
   m_Layer: 0
-  m_Name: rightDoorClosed
+  m_Name: doorR4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -47070,7 +47086,7 @@ GameObject:
   - component: {fileID: 1995012279}
   - component: {fileID: 1995012280}
   m_Layer: 0
-  m_Name: leftDoorClosed
+  m_Name: doorL1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -48046,7 +48062,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2103961462}
   m_Layer: 0
-  m_Name: DoorS3
+  m_Name: DoorD3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
