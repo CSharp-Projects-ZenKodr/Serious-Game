@@ -11,6 +11,7 @@ public class Map : MonoBehaviour
     public GameObject player;
     public GameObject objectListFather;
     private List<GameObject> objects;
+    public MainLogic mainLogic;
     public Animator characterAnimator;
     public Animator DoorU1Animator;
     public Animator DoorU2Animator;
@@ -142,7 +143,9 @@ public class Map : MonoBehaviour
             if (Mathf.Abs(p.x - playerPos.x) < 0.01 && Mathf.Abs(p.y - playerPos.y) < 0.01)
             {
                 string objName = data.objName;
-                // TODO : Call event "player is on objName"
+                print(objName);
+                mainLogic.Event(objName);
+
             }
             
 

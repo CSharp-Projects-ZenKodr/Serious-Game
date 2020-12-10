@@ -5,13 +5,12 @@ using UnityEngine;
 public class Room : MonoBehaviour
 {
     protected int index=0;
-    protected GameObject camera;
-    public GameObject door;
-    private bool levelFinished = false;
+    protected GameObject mainCamera;
+    public Animator doorAnimator;
     // Start is called before the first frame update
     protected void Start()
     {
-        camera = GameObject.Find("MainCamera");
+        mainCamera = GameObject.Find("MainCamera");
     }
 
     // Update is called once per frame
@@ -23,7 +22,7 @@ public class Room : MonoBehaviour
     {
         this.transform.parent.gameObject.GetComponent<MainLogic>().setCurrentRoom(this);
         print("You enter the room number "+index);
-        camera.transform.position = this.transform.position + new Vector3(0,0,-100);
+        mainCamera.transform.position = this.transform.position + new Vector3(0,0,-100);
     }
 
     void OnTriggerExit2D(Collider2D other)

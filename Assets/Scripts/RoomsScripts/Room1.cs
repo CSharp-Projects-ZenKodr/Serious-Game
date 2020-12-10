@@ -7,14 +7,14 @@ public class Room1 : Room
     private bool buttonPressed = false;
     private bool doorOpen = false;
     // Start is called before the first frame update
-    void Start()
+    new void Start()
     {
         base.Start();
         index = 1;
     }
 
     // Update is called once per frame
-    void Update()
+    new void Update()
     {
         
     }
@@ -22,6 +22,9 @@ public class Room1 : Room
     public override void Event(string objName)
     {
         print("You just walked on"+objName);
+        
+        doorAnimator.SetBool("isOpen", true);
+        print("bravo");
 
     }
 
@@ -31,6 +34,7 @@ public class Room1 : Room
         variables += "Red Button Pressed = " + convertBool(buttonPressed);
         variables += "\n";
         variables += "Door is Open = " + convertBool(doorOpen);
+        
         return variables;
     }
 
