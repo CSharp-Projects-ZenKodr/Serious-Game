@@ -37,18 +37,30 @@ public class Room : MonoBehaviour
         // To override
     }
 
-    public virtual List<string> GetRoomVariablesToDisplay()
+    public virtual string GetRoomVariablesToDisplay()
     {
         // To override
         print("aled");
         return null;
     }
 
-    public virtual List<string> GetRoomCodeToDisplay()
+    public virtual string GetRoomCodeToDisplay()
     {
         // To override
         print("aled2");
         return null;
+    }
+
+    public string convertBool (bool b)
+    {
+        if(b)
+        {
+            return "<color=green>" + "True" + "</color>";
+        }
+        else
+        {
+            return "<color=red>" + "False" + "</color>";
+        }
     }
 
 

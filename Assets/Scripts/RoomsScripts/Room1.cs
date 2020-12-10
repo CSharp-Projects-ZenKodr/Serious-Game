@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Room1 : Room
 {
-    private bool hasKey = false;
+    private bool buttonPressed = false;
+    private bool doorOpen = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -24,19 +25,18 @@ public class Room1 : Room
 
     }
 
-    public override List<string> GetRoomVariablesToDisplay()
+    public override string GetRoomVariablesToDisplay()
     {
-        List<string> variables = new List<string>();
-        variables.Add("hasKey");
-        variables.Add(hasKey.ToString());
+        string variables = "";
+        variables += "Red Button Pressed = " + convertBool(buttonPressed);
+        variables += "\n";
+        variables += "Door is Open = " + convertBool(doorOpen);
         return variables;
     }
 
-    public override List<string> GetRoomCodeToDisplay()
+    public override string GetRoomCodeToDisplay()
     {
-        List<string> code = new List<string>();
-        code.Add("if(hasKey is true)");
-        code.Add("  then : doorIsOpen");
+        string code = "<b>if</b>(Red Button Pressed = <color=green>True</color>)\n\t <b>then</b> Door is Open = <color=green>True</color>";
         return code;
     }
 }
