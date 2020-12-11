@@ -10,7 +10,6 @@ public class Room : MonoBehaviour
     protected GameObject mainCamera;
     public Animator doorAnimator;
 
-    protected GameObject camera;
     public GameObject door;
     private bool levelFinished = false;
 
@@ -38,7 +37,6 @@ public class Room : MonoBehaviour
 
         mainCamera.transform.position = this.transform.position + new Vector3(0,0,-100);
         setRoomHelpText(index);
-        camera.transform.position = this.transform.position + new Vector3(0,0,-100);
         
 
     }
