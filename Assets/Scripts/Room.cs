@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Room : MonoBehaviour
 {
@@ -8,6 +9,11 @@ public class Room : MonoBehaviour
     protected GameObject camera;
     public GameObject door;
     private bool levelFinished = false;
+
+    public Text explanationTab;
+    public Text explanation;
+    public Text explanationVariable;
+
     // Start is called before the first frame update
     protected void Start()
     {
@@ -21,9 +27,11 @@ public class Room : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+
         this.transform.parent.gameObject.GetComponent<MainLogic>().setCurrentRoom(this);
         print("You enter the room number "+index);
         camera.transform.position = this.transform.position + new Vector3(0,0,-100);
+        setRoomHelpText(index);
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -49,6 +57,28 @@ public class Room : MonoBehaviour
         // To override
         print("aled2");
         return null;
+    }
+
+    public virtual void setRoomHelpText(int index)
+    {
+        if(index == 0)
+        {
+            explanationTab.text = "Welcome !";
+            explanation.text = "Welcome to CodeLocks !\n" +
+                "Your goal is to escape from this house, by gathering all the keys scattered around." +
+                "This menu is here to help you, but only if you need it :)\n" +
+                "Press ESCAPE or the ? button to open or close me.";
+        }
+        if(index == 1)
+        {
+            explanationTab.text = "IF THEN";
+            explanation.text = "If is called an operator. It works like + or -, except it only needs one object.\n" +
+                "[If(Something) Then] tests if Something is true or false. If it is, you need to do everything inside the Then box.\n" +
+                "Else, you skip over the instructions.\n\n" +
+                "Try for yourself !";
+        }
+
+        //TODO KEVIN : faire toutes les explications + tab
     }
 
     public string convertBool (bool b)
