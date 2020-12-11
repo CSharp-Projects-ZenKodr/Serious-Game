@@ -68,7 +68,7 @@ public class Room : MonoBehaviour
 
     public virtual void setRoomHelpText(int index)
     {
-        if(index == 0)
+        if (index == 0)
         {
             explanationTab.text = "Welcome !";
             explanation.text = "Welcome to CodeLocks !\n" +
@@ -76,16 +76,17 @@ public class Room : MonoBehaviour
                 "This menu is here to help you, but only if you need it :)\n" +
                 "Press ESCAPE or the ? button to open or close me.";
         }
-        if(index == 1)
+        if (index == 1)
         {
-            explanationTab.text = "IF THEN";
-            explanation.text = "If is called an operator. It works like + or -, except it only needs one object.\n" +
-                "[If(Something) Then] tests if Something is true or false. If it is, you need to do everything inside the Then box.\n" +
-                "Else, you skip over the instructions.\n\n" +
-                "Try for yourself !";
-        }
+            /*      explanationTab.text = "IF THEN";
+                  explanation.text = "If is called an operator. It works like + or -, except it only needs one object.\n" +
+                      "[If(Something) Then] tests if Something is true or false. If it is, you need to do everything inside the Then box.\n" +
+                      "Else, you skip over the instructions.\n\n" +
+                      "Try for yourself !";
+              }*/
 
-        //TODO KEVIN : faire toutes les explications + tab
+            //TODO KEVIN : faire toutes les explications + tab
+        }
     }
 
     public string convertBool (bool b)
