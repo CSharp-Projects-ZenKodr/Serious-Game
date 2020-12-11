@@ -8,6 +8,7 @@ public class Map : MonoBehaviour
     public int width;
     public int c, invSpeed;
     public bool moveU, moveD, moveL, moveR;
+    private bool menuOpen = false;
     public GameObject player;
     public GameObject objectListFather;
     private List<GameObject> objects;
@@ -64,7 +65,8 @@ public class Map : MonoBehaviour
         characterAnimator.SetBool("moveD", Input.GetKey(KeyCode.DownArrow));
         characterAnimator.SetBool("moveL", Input.GetKey(KeyCode.LeftArrow));
         characterAnimator.SetBool("moveR", Input.GetKey(KeyCode.RightArrow));
-        MovePlayer();
+        if(!menuOpen)
+            MovePlayer();
         CallEvent();
     }
 
@@ -130,6 +132,11 @@ public class Map : MonoBehaviour
             player.transform.position = this.transform.position + newPosition;
         }
 
+    }
+
+    public void TogglePlayerMovement()
+    {
+        menuOpen = !menuOpen;
     }
 
     void CallEvent()
