@@ -6,10 +6,10 @@ using UnityEngine.UI;
 public class Room : MonoBehaviour
 {
     protected int index=0;
-<<<<<<< HEAD
+
     protected GameObject mainCamera;
     public Animator doorAnimator;
-=======
+
     protected GameObject camera;
     public GameObject door;
     private bool levelFinished = false;
@@ -18,7 +18,7 @@ public class Room : MonoBehaviour
     public Text explanation;
     public Text explanationVariable;
 
->>>>>>> HelpUI
+
     // Start is called before the first frame update
     protected void Start()
     {
@@ -35,12 +35,12 @@ public class Room : MonoBehaviour
 
         this.transform.parent.gameObject.GetComponent<MainLogic>().setCurrentRoom(this);
         print("You enter the room number "+index);
-<<<<<<< HEAD
+
         mainCamera.transform.position = this.transform.position + new Vector3(0,0,-100);
-=======
-        camera.transform.position = this.transform.position + new Vector3(0,0,-100);
         setRoomHelpText(index);
->>>>>>> HelpUI
+        camera.transform.position = this.transform.position + new Vector3(0,0,-100);
+        
+
     }
 
     void OnTriggerExit2D(Collider2D other)
