@@ -78,12 +78,12 @@ public class Room : MonoBehaviour
         }
         if (index == 1)
         {
-            /*      explanationTab.text = "IF THEN";
+               /*   explanationTab.text = "IF THEN";
                   explanation.text = "If is called an operator. It works like + or -, except it only needs one object.\n" +
                       "[If(Something) Then] tests if Something is true or false. If it is, you need to do everything inside the Then box.\n" +
                       "Else, you skip over the instructions.\n\n" +
                       "Try for yourself !";
-              }*/
+              */
 
             //TODO KEVIN : faire toutes les explications + tab
         }
