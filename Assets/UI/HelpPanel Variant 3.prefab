@@ -1,0 +1,342 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8519499329077615436
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4515648416971804430}
+  - component: {fileID: 6666191514142106363}
+  - component: {fileID: 2096868348204646069}
+  m_Layer: 5
+  m_Name: TextExam (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4515648416971804430
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8519499329077615436}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1675894888104826704}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -67, y: -185}
+  m_SizeDelta: {x: 366.0296, y: 234.77632}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &6666191514142106363
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8519499329077615436}
+  m_CullTransparentMesh: 0
+--- !u!114 &2096868348204646069
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8519499329077615436}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 20
+    m_FontStyle: 1
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\t\t\t\t\tOPERATORS\n\n2 x 2 == 4 : true.\n\n25 == 24 : false.  \n\nNOT
+    (2 x 2 == 4) : false.\n\n4 > 3 : true.\n\n\n"
+--- !u!1001 &168130618198231996
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 29432807792484197, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_Text
+      value: "Operators are tools to manipulate objects.\nFor example, + is an operator
+        that needs 2 numbers, and adds them.\n\nBoolean operators are used to compare
+        items : \n\t-  == to test if they are equal\n\t- > to test if left is greater
+        than right\n\t- < to test if left is smaller than right\n\nThere is one special
+        operator : NOT, also written as !\nIf BOOL is true, then NOT BOOL is false.
+        And if BOOL is false, NOT BOOL is true. "
+      objectReference: {fileID: 0}
+    - target: {fileID: 29432807792484197, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 575050319961849759, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_Text
+      value: BOOLEANS
+      objectReference: {fileID: 0}
+    - target: {fileID: 639048896800678123, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 639048896800678123, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -194.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 639048896800678123, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 256.52673
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093823576513682, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093823576513693, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093823576513693, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 157.89996
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093824722128256, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_Text
+      value: OPERATORS
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093824844894220, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093824844894220, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093824844894220, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093824844894220, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093824844894220, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093824844894220, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093824844894220, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093824844894220, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093824844894220, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093824844894220, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093824844894220, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093824844894220, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093824844894220, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093824844894220, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093824844894220, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093824844894220, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093824844894220, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093824844894220, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093824844894220, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093824844894220, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093824844894220, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093824844894220, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093824844894220, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093824844894220, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093824844894221, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_Name
+      value: HelpPanel Variant 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1578076177205283823, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2630617206171888093, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3374981324952447653, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_Text
+      value: "Booleans are objects which can be true or false. \nThey are the simplest
+        and most important item of computer logic.\n\nIn the real world, booleans
+        are similar to statements :\n\tOne is an odd number is a boolean, and is
+        true.\n\tThe earth is flat is a boolean, and is false.\n\nTry and think of
+        your own booleans !"
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867115460884985854, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4083533387085571729, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4885295779184648204, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7005379830787546567, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 268
+      objectReference: {fileID: 0}
+    - target: {fileID: 7005379830787546567, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 157.89996
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354345239049596835, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -439
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354345239049596835, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -185
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354345239049596835, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 366.0296
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393919307802766136, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_Text
+      value: "\t\t\t\t\tBOOLEANS\n\nTwo times two equals 4 : true.\n\nThere are 25
+        hours in one day : false.\n\nTwo times two is NOT four : false.\n\nFour is
+        greater than three : true.\n\n\n"
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: bc532054b6ab2b9418efe4dd573a8f25, type: 3}
+--- !u!224 &1675894888104826704 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 1519024162380913900, guid: bc532054b6ab2b9418efe4dd573a8f25,
+    type: 3}
+  m_PrefabInstance: {fileID: 168130618198231996}
+  m_PrefabAsset: {fileID: 0}
