@@ -7,10 +7,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 575050319961849759, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_Text
+      value: FOR
+      objectReference: {fileID: 0}
     - target: {fileID: 1448093823576513682, guid: bc532054b6ab2b9418efe4dd573a8f25,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1448093823576513692, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1448093824844894220, guid: bc532054b6ab2b9418efe4dd573a8f25,
         type: 3}
@@ -142,6 +152,22 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3374981324952447653, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_Text
+      value: 'For is an instruction similar to counting.
+
+
+        For(Value from
+        1 to 3) has steps equal to the 2nd number, here 3. For each step, value is
+        equal to the step''s number.
+
+        Step 1 : Value = 1; Step 2 : Value
+        = 2 etc.
+
+
+        For is useful to sum numbers, or to repeat actions.'
+      objectReference: {fileID: 0}
     - target: {fileID: 4083533387085571729, guid: bc532054b6ab2b9418efe4dd573a8f25,
         type: 3}
       propertyPath: m_IsActive
@@ -156,6 +182,49 @@ PrefabInstance:
         type: 3}
       propertyPath: m_StaticEditorFlags
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7287760578879617830, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7346028997816945128, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7354766592341242027, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_CallState
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354345239049596835, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -207.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8354345239049596835, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 285.20642
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393919307802766136, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_Text
+      value: "For(Number from 1 to 5)\t\t\t\tPrints : \t1\nl\tPrint Number\t\t\t\t\t\t\t\t\t\t\t2\t\r\nl\tLine
+        Break\t\t\t\t\t\t\t\t\t\t\t\t\r3\nEnd For\t\t\t\t\t\t\t\t\t\t\t\t\t\t4\r\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\r5\n\t\t\t\t\t\t\n\nSum
+        = 0\t\t\t\t\t\t\t\t\t\tPrints : 6\nFor(Number from 1 to 3)\nl\tSum = Number
+        + Sum\nEnd For\nPrint Sum"
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393919307802766136, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_FontData.m_AlignByGeometry
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8393919307802766136, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_FontData.m_VerticalOverflow
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc532054b6ab2b9418efe4dd573a8f25, type: 3}

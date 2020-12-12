@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HideShow : MonoBehaviour
 {
-    bool active = false;
+    [SerializeField] private bool active;
     // Start is called before the first frame update
     void Start()
     {
