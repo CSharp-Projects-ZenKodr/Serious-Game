@@ -620,16 +620,17 @@ PrefabInstance:
     - target: {fileID: 3374981324952447653, guid: bc532054b6ab2b9418efe4dd573a8f25,
         type: 3}
       propertyPath: m_Text
-      value: 'IF is called an operator. It works like + or -, except it only needs
-        one object.
+      value: 'IF is called an <color=yellow>operator</color>. It works like + or
+        -, except it only needs one object.
 
 
-        [If(Something) Then] tests if Something is true or
-        false. If it is, you need to do everything inside the Then box.
+        [IF(Something) THEN] tests
+        if Something is <color=green>TRUE</color> or <color=red>FALSE</color>. If
+        it is, you need to do everything inside the THEN box.
 
 
-        Else,
-        you skip over the instructions.
+        ELSE, you
+        skip over the instructions.
 
 
         Try for yourself !
@@ -639,7 +640,7 @@ PrefabInstance:
     - target: {fileID: 3867115460884985854, guid: bc532054b6ab2b9418efe4dd573a8f25,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4083533387085571729, guid: bc532054b6ab2b9418efe4dd573a8f25,
         type: 3}
@@ -699,13 +700,18 @@ PrefabInstance:
     - target: {fileID: 8393919307802766136, guid: bc532054b6ab2b9418efe4dd573a8f25,
         type: 3}
       propertyPath: m_Text
-      value: "Number = 0\nIF(Apple Color == GREEN)\nThen\nl\tNumber = 2\nEND IF\nPrint
+      value: "Number = 0\nIF(Apple Color == GREEN)\nTHEN\nl\tNumber = 2\nEND IF\nPrint
         Number\n"
       objectReference: {fileID: 0}
     - target: {fileID: 8393919307802766136, guid: bc532054b6ab2b9418efe4dd573a8f25,
         type: 3}
       propertyPath: m_FontData.m_LineSpacing
       value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9101213809169094372, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_CullTransparentMesh
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1254767809206304178, guid: bc532054b6ab2b9418efe4dd573a8f25, type: 3}

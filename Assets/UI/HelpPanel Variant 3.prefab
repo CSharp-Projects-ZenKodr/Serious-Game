@@ -71,7 +71,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -67, y: -185}
+  m_AnchoredPosition: {x: -37, y: -185}
   m_SizeDelta: {x: 366.0296, y: 234.77632}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6666191514142106363
@@ -114,8 +114,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\t\t\t\t\tOPERATORS\n\n2 x 2 <color== 4 : true.\n\n25 == 24 : false. 
-    \n\nNOT (2 x 2 == 4) : false.\n\n4 > 3 : true.\n\n\n"
+  m_Text: "\t\t\t\tOPERATORS\n\n2 x 2 <color=yellow>==</color> 4 : <color=green>TRUE</color>\n\n25
+    <color=yellow>==</color> 24 : <color=red>FALSE</color>\n\n<color=red>NOT</color>
+    (2 x 2 <color=yellow>==</color> 4) : <color=red>FALSE</color>\n\n4 <color=yellow>></color>
+    3 : <color=green>TRUE</color>\n\n\n"
 --- !u!1001 &168130618198231996
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -126,12 +128,12 @@ PrefabInstance:
     - target: {fileID: 29432807792484197, guid: bc532054b6ab2b9418efe4dd573a8f25,
         type: 3}
       propertyPath: m_Text
-      value: "Operators are tools to manipulate objects.\nFor example, + is an operator
-        that needs 2 numbers, and adds them.\n\nBoolean operators are used to compare
-        items : \n\t-  == to test if they are equal\n\t- > to test if left is greater
-        than right\n\t- < to test if left is smaller than right\n\nThere is one special
-        operator : NOT, also written as !\nIf BOOL is true, then NOT BOOL is false.
-        And if BOOL is false, NOT BOOL is true. "
+      value: "Operators are tools to use on objects. For example, + takes two numbers
+        and adds them.\n\nBoolean operators are used to compare items : \n\t-  <color=yellow>==</color>
+        to test if they are <color=yellow>equal</color>\n\t- <color=yellow>></color>
+        to test if left is <color=yellow>greater</color> than right\n\t- <color=yellow><</color>
+        to test if left is <color=yellow>smaller</color> than right\n\t- <color=red>NOT</color>
+        returns the opposite of a boolean."
       objectReference: {fileID: 0}
     - target: {fileID: 29432807792484197, guid: bc532054b6ab2b9418efe4dd573a8f25,
         type: 3}
@@ -151,12 +153,12 @@ PrefabInstance:
     - target: {fileID: 639048896800678123, guid: bc532054b6ab2b9418efe4dd573a8f25,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -194.9
+      value: -170.4
       objectReference: {fileID: 0}
     - target: {fileID: 639048896800678123, guid: bc532054b6ab2b9418efe4dd573a8f25,
         type: 3}
       propertyPath: m_SizeDelta.y
-      value: 256.52673
+      value: 231.38104
       objectReference: {fileID: 0}
     - target: {fileID: 1448093823576513682, guid: bc532054b6ab2b9418efe4dd573a8f25,
         type: 3}
@@ -311,7 +313,7 @@ PrefabInstance:
     - target: {fileID: 2630617206171888093, guid: bc532054b6ab2b9418efe4dd573a8f25,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3374981324952447653, guid: bc532054b6ab2b9418efe4dd573a8f25,
         type: 3}
@@ -336,7 +338,7 @@ PrefabInstance:
     - target: {fileID: 4885295779184648204, guid: bc532054b6ab2b9418efe4dd573a8f25,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5483015606456015921, guid: bc532054b6ab2b9418efe4dd573a8f25,
         type: 3}
@@ -383,13 +385,19 @@ PrefabInstance:
       propertyPath: m_SizeDelta.x
       value: 366.0296
       objectReference: {fileID: 0}
+    - target: {fileID: 8354345239049596835, guid: bc532054b6ab2b9418efe4dd573a8f25,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 234.77632
+      objectReference: {fileID: 0}
     - target: {fileID: 8393919307802766136, guid: bc532054b6ab2b9418efe4dd573a8f25,
         type: 3}
       propertyPath: m_Text
       value: "\t\t\t\t\tBOOLEANS\n\nTwo times two <color=yellow>EQUALS</color> 4
-        : true.\n\nThere <color=yellow>ARE</color> 25 hours in one day : false.\n\nTwo
-        times two <color=yellow>IS</color> <color=red>NOT</color> four : false.\n\nFour
-        is <color=yellow>GREATER</color> than three : true.\n\n\n"
+        : <color=green>TRUE</color>\n\nThere <color=yellow>ARE</color> 25 hours in
+        a day : <color=red>FALSE</color>\n\nTwo times two <color=yellow>IS</color>
+        <color=red>NOT</color> four : <color=red>FALSE</color>\n\nFour is <color=yellow>GREATER</color>
+        than three : <color=green>TRUE</color>\n\n\n"
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1448093824844894222, guid: bc532054b6ab2b9418efe4dd573a8f25, type: 3}

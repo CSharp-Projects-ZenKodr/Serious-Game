@@ -179,6 +179,9 @@ PrefabInstance:
       propertyPath: m_Text
       value: 'The following rooms are your final test.
 
+        No tips for this
+        one.
+
 
         Good luck !'
       objectReference: {fileID: 0}
