@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1448093823576513693
 RectTransform:
   m_ObjectHideFlags: 0
@@ -165,7 +165,7 @@ GameObject:
   - component: {fileID: 1448093824722128259}
   - component: {fileID: 1448093824722128256}
   m_Layer: 5
-  m_Name: TabText
+  m_Name: TabVar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -245,7 +245,7 @@ GameObject:
   - component: {fileID: 1448093824844894223}
   - component: {fileID: 508914290240804947}
   - component: {fileID: 1254767809206304178}
-  - component: {fileID: 1448093823787609994}
+  - component: {fileID: 1858381705633893371}
   m_Layer: 5
   m_Name: HelpPanel
   m_TagString: Untagged
@@ -372,7 +372,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &1448093823787609994
+--- !u!114 &1858381705633893371
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -381,10 +381,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 1448093824844894221}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 10a7412d5cb327b43ae19c154ecf50de, type: 3}
+  m_Script: {fileID: 11500000, guid: 825f91503977a8b439226e961cd02c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  active: 0
 --- !u!1 &1578076177205283823
 GameObject:
   m_ObjectHideFlags: 0
@@ -403,7 +402,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7005379830787546567
 RectTransform:
   m_ObjectHideFlags: 0
@@ -551,7 +550,7 @@ GameObject:
   - component: {fileID: 8393919307802766136}
   - component: {fileID: 3020607260295942631}
   m_Layer: 5
-  m_Name: Text
+  m_Name: RoomExam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -643,7 +642,7 @@ GameObject:
   - component: {fileID: 6552935529770444743}
   - component: {fileID: 575050319961849759}
   m_Layer: 5
-  m_Name: TabText
+  m_Name: TabExp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -708,7 +707,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Explanation
+  m_Text: Welcome !
 --- !u!1 &6207106029169382171
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,9 +720,8 @@ GameObject:
   - component: {fileID: 9101213809169094372}
   - component: {fileID: 3374981324952447653}
   - component: {fileID: 6720093708444238151}
-  - component: {fileID: 330280780785988343}
   m_Layer: 5
-  m_Name: Text
+  m_Name: RoomExp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -786,12 +784,21 @@ MonoBehaviour:
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
+    m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'EXPLANATION TEXT EXPLANATION TEXT EXPLANATION TEXT EXPLANATION TEXT EXPLANATION
-    TEXT EXPLANATION TEXT EXPLANATION TEXT EXPLANATION TEXT EXPLANATION TEXT EXPLANATION
-    TEXT EXPLANATION TEXT EXPLANATION TEXT EXPLANATION TEXT EXPLANATION TEXT EXPLANATION
-    TEXT EXPLANATION TEXT EXPLANATION TEXT EXPLANATION TEXT '
+  m_Text: 'Welcome to CodeLocks !
+
+
+    Your goal is to escape the house by collecting
+    the keys in the room.
+
+
+    This menu is here to help you, but only if you need
+    it :)
+
+
+
+    Press ESCAPE or the ? button to open or close me.'
 --- !u!114 &6720093708444238151
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -804,19 +811,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 825f91503977a8b439226e961cd02c47, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &330280780785988343
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6207106029169382171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 715420d9d64996440b7242d82f8b6e85, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  localText: {fileID: 3374981324952447653}
 --- !u!1 &7105541896755574190
 GameObject:
   m_ObjectHideFlags: 0
@@ -829,7 +823,7 @@ GameObject:
   - component: {fileID: 3401153658428416950}
   - component: {fileID: 8078523409002109471}
   m_Layer: 5
-  m_Name: TabText
+  m_Name: TabExam
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -908,7 +902,7 @@ GameObject:
   - component: {fileID: 29432807792484197}
   - component: {fileID: 7796325257684579434}
   m_Layer: 5
-  m_Name: Text
+  m_Name: RoomVar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
