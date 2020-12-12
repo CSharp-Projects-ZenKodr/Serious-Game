@@ -21,9 +21,9 @@ public class MainLogic : MonoBehaviour
         
     }
 
-    public void Event(string objName)
+    public void Event(string objName, bool activate)
     {
-        currentRoom.Event(objName);
+        currentRoom.Event(objName, activate);
         // update potential variable change
         varText.text = currentRoom.GetRoomVariablesToDisplay();
 

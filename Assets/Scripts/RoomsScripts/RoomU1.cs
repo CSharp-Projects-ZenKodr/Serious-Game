@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Room1 : Room
+public class RoomU1 : Room
 {
     private bool buttonPressed = false;
     private bool doorOpen = false;
@@ -19,12 +19,20 @@ public class Room1 : Room
         
     }
 
-    public override void Event(string objName)
+    public override void Event(string objName, bool activate)
     {
-        print("You just walked on"+objName);
-        
-        doorAnimator.SetBool("isOpen", true);
-        print("bravo");
+        if (activate)
+        {
+            doorAnimator.SetBool("isOpen", true);
+            print("bravo");
+            buttonPressed = true;
+            doorOpen = true;
+        }
+        else
+        {
+            buttonPressed = false;
+        }
+
 
     }
 

@@ -10,9 +10,6 @@ public class Room : MonoBehaviour
     protected GameObject mainCamera;
     public Animator doorAnimator;
 
-    public GameObject door;
-    private bool levelFinished = false;
-
     public GameObject uiPanel;
 
     // Start is called before the first frame update
@@ -45,7 +42,7 @@ public class Room : MonoBehaviour
         uiPanel.SetActive(false);
     }
 
-    public virtual void Event(string objName)
+    public virtual void Event(string objName, bool activate)
     {  
         // To override
     }
@@ -53,14 +50,14 @@ public class Room : MonoBehaviour
     public virtual string GetRoomVariablesToDisplay()
     {
         // To override
-        print("aled");
+        //print("aled");
         return null;
     }
 
     public virtual string GetRoomCodeToDisplay()
     {
         // To override
-        print("aled2");
+        //print("aled2");
         return null;
     }
 

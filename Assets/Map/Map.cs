@@ -67,7 +67,6 @@ public class Map : MonoBehaviour
         characterAnimator.SetBool("moveR", Input.GetKey(KeyCode.RightArrow));
         if(!menuOpen)
             MovePlayer();
-        CallEvent();
     }
 
 
@@ -139,8 +138,10 @@ public class Map : MonoBehaviour
         menuOpen = !menuOpen;
     }
 
+    /*
     void CallEvent()
     {
+        
         Vector3 playerPos = player.transform.position - this.transform.position;
         foreach (GameObject obj in objects)
         {
@@ -158,5 +159,6 @@ public class Map : MonoBehaviour
 
         }
     }
+    */
 
 }
