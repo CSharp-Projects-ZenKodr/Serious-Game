@@ -83,6 +83,7 @@ public class Map : MonoBehaviour
         foreach(GameObject obj in objects)
         {
             MapObject data = obj.GetComponent<MapObject>();
+            
             if (data.collisionEnabled)
             {
                 Vector3 p = obj.transform.position-this.transform.position;

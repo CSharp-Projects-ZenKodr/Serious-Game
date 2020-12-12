@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RoomU1 : Room
 {
+    public Animator redButton;
+    public MapObject doorBlocker;
     private bool buttonPressed = false;
     private bool doorOpen = false;
     // Start is called before the first frame update
@@ -23,8 +25,10 @@ public class RoomU1 : Room
     {
         if (activate)
         {
+            doorBlocker.collisionEnabled = false;
+            redButton.SetBool("isPushed", true);
             doorAnimator.SetBool("isOpen", true);
-            print("bravo");
+            print("Bravo !");
             buttonPressed = true;
             doorOpen = true;
         }
