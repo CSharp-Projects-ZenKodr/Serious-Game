@@ -35,12 +35,12 @@ public class Room : MonoBehaviour
         
     }
 
-    /*void OnTriggerExit2D(Collider2D other)
+    void OnTriggerExit2D(Collider2D other)
     {
-        this.transform.parent.gameObject.GetComponent<MainLogic>().setCurrentRoom(null);
+        //this.transform.parent.gameObject.GetComponent<MainLogic>().setCurrentRoom(null);
         print("You leave the room number " + index);
         uiPanel.SetActive(false);
-    }*/
+    }
 
     public virtual void Event(string objName, bool activate)
     {  

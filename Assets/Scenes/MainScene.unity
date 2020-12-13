@@ -37225,8 +37225,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 634310557}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.03, y: 0.78, z: 0}
-  m_LocalScale: {x: 0.26335466, y: 0.26335466, z: 0.26335466}
+  m_LocalPosition: {x: -0.03, y: 0.65, z: 0}
+  m_LocalScale: {x: 0.5338466, y: 0.5338466, z: 0.5338466}
   m_Children: []
   m_Father: {fileID: 1659232320}
   m_RootOrder: 1
@@ -37861,6 +37861,7 @@ GameObject:
   - component: {fileID: 762657136}
   - component: {fileID: 762657135}
   - component: {fileID: 762657134}
+  - component: {fileID: 762657137}
   m_Layer: 5
   m_Name: HelpButton
   m_TagString: Untagged
@@ -37979,6 +37980,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 762657132}
   m_CullTransparentMesh: 0
+--- !u!114 &762657137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762657132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eb7a94e3d04a4e43b3b56df48084e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myself: {fileID: 762657134}
 --- !u!1 &775399707 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5984935159858642033, guid: 075c553b0f45a2a47825ef5b8cccea92,
@@ -39749,8 +39763,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1112665805}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: 0.69, z: 0}
-  m_LocalScale: {x: 0.29058772, y: 0.29058772, z: 0.29058772}
+  m_LocalPosition: {x: -0.03, y: 0.618, z: 0}
+  m_LocalScale: {x: 0.51762956, y: 0.51762956, z: 0.51762956}
   m_Children: []
   m_Father: {fileID: 1309305585}
   m_RootOrder: 1
