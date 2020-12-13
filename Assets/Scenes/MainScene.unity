@@ -1945,6 +1945,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &388458443 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2960001710289606924, guid: 681cd2e396044cf409ac66cd5cd5f811,
+    type: 3}
+  m_PrefabInstance: {fileID: 311092161}
+  m_PrefabAsset: {fileID: 0}
+--- !u!61 &388458446
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388458443}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.3}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 1.56}
+    newSize: {x: 0.64, y: 0.78}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 2}
+  m_EdgeRadius: 0
+--- !u!114 &388458447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388458443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 114df087cfc56a04e9a5afdea7ac76fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainLogic: {fileID: 1189214872}
+  objName: Lever
 --- !u!1 &392710292
 GameObject:
   m_ObjectHideFlags: 0
@@ -40649,7 +40695,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8040ef1f47bd36d42bfdf7ed6251f696, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorAnimator: {fileID: 553796565}
+  doorAnimator: {fileID: 1886537858}
   uiPanel: {fileID: 775399707}
   blueButton: {fileID: 121186775}
   lever: {fileID: 694074521}
@@ -40968,6 +41014,51 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1292435592 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8750476605461622303, guid: 05fdb2cf1eba59f4e9742e03628d1615,
+    type: 3}
+  m_PrefabInstance: {fileID: 2104609678}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1292435595
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292435592}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e833cf795078ee49a3d3aad3b171086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  objName: BlueButton
+--- !u!61 &1292435596
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292435592}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.6666667, y: 0.6666667}
+    newSize: {x: 0.6666667, y: 0.6666667}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.6666667, y: 0.6666667}
+  m_EdgeRadius: 0
 --- !u!1 &1295964335
 GameObject:
   m_ObjectHideFlags: 0

@@ -60,11 +60,11 @@ public class RoomL1 : Room
                 break;
 
             case 2:
-                if (objName == "TrueButton")
+                if (objName == "FalseButton")
                 {
                     code = "\t\t4 == 4\t: <color=green>TRUE</color>\n" +
                            "\t\t10 > 20\t: <color=red>FALSE</color>\n" +
-                           "\t\tNOT TRUE \t: <color=green>TRUE</color>";
+                           "\t\tNOT TRUE \t: <color=red>FALSE</color>";
                     step++;
                     doorBlocker.collisionEnabled = false;
                     doorAnimator.SetBool("isOpen", true);

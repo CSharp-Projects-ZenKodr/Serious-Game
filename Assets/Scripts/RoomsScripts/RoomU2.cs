@@ -25,22 +25,40 @@ public class RoomU2 : Room
 
     public override void Event(string objName, bool activate)
     {
-        if (activate)
+        if (objName == "Lever")
         {
-            doorBlocker.collisionEnabled = false;
-            blueButton.SetBool("isPushed", true);
-            lever.SetBool("isTrigger", true);
-            doorAnimator.SetBool("isOpen", true);
-            print("Bravo !");
-            buttonPressed = true;
-            leverTriggered = true;
-            doorOpen = true;
+            if (!leverTriggered)
+            {             
+                lever.SetBool("isTrigger", true);
+                leverTriggered = true;
+            }
+            else
+            {
+                lever.SetBool("isTrigger", false);
+                leverTriggered = false;
+            }
         }
-        else
+
+        if(objName== "BlueButton")
         {
-            blueButton.SetBool("isPushed", false);
-            buttonPressed = false;
+            if (activate)
+            {
+                blueButton.SetBool("isPushed", true);
+                buttonPressed = true;
+                if (leverTriggered)
+                {
+                    doorBlocker.collisionEnabled = false;
+                    doorAnimator.SetBool("isOpen", true);
+                    doorOpen = true;
+                }
+            }
+            else
+            {
+                blueButton.SetBool("isPushed", false);
+                buttonPressed = false;
+            }
         }
+
 
 
     }
