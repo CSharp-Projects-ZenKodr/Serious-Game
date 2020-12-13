@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class RoomR1 : Room
 {
+    public MapObject d1DoorBlocker;
+    public Animator d1Door;
     public MapObject doorBlocker;
     private bool doorOpen = false;
     public Animator lever1;
@@ -91,9 +93,12 @@ public class RoomR1 : Room
     {
         if(l1&&l2&&l3&&l4)
         {
+
             doorOpen = true;
             doorBlocker.collisionEnabled = false;
             doorAnimator.SetBool("isOpen", true);
+            d1DoorBlocker.collisionEnabled = false;
+            d1Door.SetBool("isOpen", true);
         }
     }
 
