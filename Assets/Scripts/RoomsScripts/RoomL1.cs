@@ -6,6 +6,8 @@ public class RoomL1 : Room
 {
     public Animator redButton;
     public MapObject doorBlocker;
+    public MapObject u1DoorBlocker;
+    public Animator u1Door;
     private bool buttonPressed = false;
     private bool doorOpen = false;
     private string code = "=>\t4 == 4\t: ?\n";
@@ -67,6 +69,8 @@ public class RoomL1 : Room
                            "\t\tNOT TRUE \t: <color=red>FALSE</color>";
                     step++;
                     doorBlocker.collisionEnabled = false;
+                    u1DoorBlocker.collisionEnabled = false;
+                    u1Door.SetBool("isOpen", true);
                     doorAnimator.SetBool("isOpen", true);
                     //print("lesgobaby");
                 }

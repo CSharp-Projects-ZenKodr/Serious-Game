@@ -50,9 +50,9 @@ public class Map : MonoBehaviour
         Vector3 newPos = new Vector3((int)(pos.x - 0.5), (int)(pos.y - 0.5), 0);
         player.transform.position = newPos;
 
-        DoorU1Animator.SetBool("isOpen", true);
-        DoorR1Animator.SetBool("isOpen", true);
-        DoorD1Animator.SetBool("isOpen", true);
+        //DoorU1Animator.SetBool("isOpen", true);
+       // DoorR1Animator.SetBool("isOpen", true);
+        //DoorD1Animator.SetBool("isOpen", true);
         DoorL1Animator.SetBool("isOpen", true);
     }
 

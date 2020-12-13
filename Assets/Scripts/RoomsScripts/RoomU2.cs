@@ -7,6 +7,8 @@ public class RoomU2 : Room
     public Animator blueButton;
     public Animator lever;
     public MapObject doorBlocker;
+    public MapObject r1DoorBlocker;
+    public Animator r1Door;
     private bool buttonPressed = false;
     private bool leverTriggered = false;
     private bool doorOpen = false;
@@ -47,6 +49,8 @@ public class RoomU2 : Room
                 buttonPressed = true;
                 if (leverTriggered)
                 {
+                    r1DoorBlocker.collisionEnabled = false;
+                    r1Door.SetBool("isOpen", true);
                     doorBlocker.collisionEnabled = false;
                     doorAnimator.SetBool("isOpen", true);
                     doorOpen = true;
