@@ -127,7 +127,7 @@ public class RoomR1 : Room
         code += "\n\t\t<b>THEN</b> : All lever activated = <color=red>False</color>)";
         code += "\n<b>END FOR</b>";
         code += "\n\n<b>IF</b>(All lever activated = <color=green>True</color>)";
-        code += "\n\t\t<b>THEN</b> : Door is Open = <color=green>True</color>)";
+        code += "\n\t\t<b>THEN</b> : Door is Open = <color=green>True</color>\n<b>END IF</b>";
 
         return code;
     }

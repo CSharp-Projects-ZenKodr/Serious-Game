@@ -81,7 +81,7 @@ public class RoomU2 : Room
 
     public override string GetRoomCodeToDisplay()
     {
-        string code = "<b>if</b>(Blue Button Pressed = <color=green>True</color>) and (Lever Trigger = <color=green>True</color>) \n\t <b>then</b> Door is Open = <color=green>True</color>";
+        string code = "<b>IF</b>(Blue Button Pressed = <color=green>True</color> <b>AND</b> Lever Trigger = <color=green>True</color>) \n\t <b>THEN</b> Door is Open = <color=green>True</color>\n<b>END IF</b>";
         return code;
     }
 }
