@@ -37424,8 +37424,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 634310557}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.03, y: 0.78, z: 0}
-  m_LocalScale: {x: 0.26335466, y: 0.26335466, z: 0.26335466}
+  m_LocalPosition: {x: -0.073, y: 0.6835, z: 0}
+  m_LocalScale: {x: 0.74480814, y: 0.74480814, z: 0.74480814}
   m_Children: []
   m_Father: {fileID: 1659232320}
   m_RootOrder: 1
@@ -38060,6 +38060,7 @@ GameObject:
   - component: {fileID: 762657136}
   - component: {fileID: 762657135}
   - component: {fileID: 762657134}
+  - component: {fileID: 762657137}
   m_Layer: 5
   m_Name: HelpButton
   m_TagString: Untagged
@@ -38178,6 +38179,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 762657132}
   m_CullTransparentMesh: 0
+--- !u!114 &762657137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 762657132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8eb7a94e3d04a4e43b3b56df48084e5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myself: {fileID: 762657134}
 --- !u!1 &769460267
 GameObject:
   m_ObjectHideFlags: 0
@@ -38832,7 +38846,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 859417828}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -69, y: -67, z: 0}
+  m_LocalPosition: {x: -69, y: -66.97, z: 0}
   m_LocalScale: {x: 140, y: 129, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -40300,8 +40314,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1112665805}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.01, y: 0.69, z: 0}
-  m_LocalScale: {x: 0.29058772, y: 0.29058772, z: 0.29058772}
+  m_LocalPosition: {x: -0.037, y: 0.675, z: 0}
+  m_LocalScale: {x: 0.7750901, y: 0.7750901, z: 0.7750901}
   m_Children: []
   m_Father: {fileID: 1309305585}
   m_RootOrder: 1
@@ -52017,7 +52031,7 @@ PrefabInstance:
     - target: {fileID: 4035584651576071768, guid: 5b3f7fb5e741ead4e9a2e19523879d49,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.36
+      value: 4.39
       objectReference: {fileID: 0}
     - target: {fileID: 4035584651576071768, guid: 5b3f7fb5e741ead4e9a2e19523879d49,
         type: 3}
@@ -52089,6 +52103,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 6858423192042044968, guid: 5b3f7fb5e741ead4e9a2e19523879d49,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 6858423192042044968, guid: 5b3f7fb5e741ead4e9a2e19523879d49,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.37
       objectReference: {fileID: 0}
     - target: {fileID: 6858423192042044969, guid: 5b3f7fb5e741ead4e9a2e19523879d49,
         type: 3}
