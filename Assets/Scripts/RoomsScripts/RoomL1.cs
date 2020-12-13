@@ -8,6 +8,7 @@ public class RoomL1 : Room
     public MapObject doorBlocker;
     private bool buttonPressed = false;
     private bool doorOpen = false;
+    private string code = "=>\t4 == 4\t: ?\n";
     private int step = 0;
     // Start is called before the first frame update
     new void Start()
@@ -30,21 +31,30 @@ public class RoomL1 : Room
                 if (objName == "TrueButton")
                 {
                     step++;
+                    code = "\t\t4 == 4\t: <color=green>TRUE</color>\n" +
+                            "=>\t10 > 20\t: ?";
                     Debug.Log("true");
                 }
                 else
+                {
+                    code = "=>\t4 == 4\t: ?\n";
                     Debug.Log("false");
+                }
                 break;
 
             case 1:
                 if (objName == "FalseButton")
                 {
+                    code = "\t\t4 == 4\t: <color=green>TRUE</color>\n" +
+                           "\t\t10 > 20\t: <color=red>FALSE</color>\n" +
+                           "=>\tNOT TRUE \t: ?";
                     step++;
-                    Debug.Log("false");
+                    //Debug.Log("false");
                 }
                 else
                 {
-                    Debug.Log("true");
+                    code = "=>\t4 == 4\t: ?\n";
+                    //Debug.Log("true");
                     step = 0;
                 }
                 break;
@@ -52,13 +62,19 @@ public class RoomL1 : Room
             case 2:
                 if (objName == "TrueButton")
                 {
+                    code = "\t\t4 == 4\t: <color=green>TRUE</color>\n" +
+                           "\t\t10 > 20\t: <color=red>FALSE</color>\n" +
+                           "\t\tNOT TRUE \t: <color=green>TRUE</color>";
                     step++;
                     doorBlocker.collisionEnabled = false;
                     doorAnimator.SetBool("isOpen", true);
-                    print("lesgobaby");
+                    //print("lesgobaby");
                 }
                 else
+                {
+                    code = "=>\t4 == 4\t: ?\n";
                     step = 0;
+                }
                 break;
             case 3:
                 Debug.Log("Stop pressing the button dumas");
@@ -71,17 +87,17 @@ public class RoomL1 : Room
 
     public override string GetRoomVariablesToDisplay()
     {
-        string variables = "";
-        variables += "Red Button Pressed = " + convertBool(buttonPressed);
+       string variables = "";
+        /*variables += "Red Button Pressed = " + convertBool(buttonPressed);
         variables += "\n";
-        variables += "Door is Open = " + convertBool(doorOpen);
+        variables += "Door is Open = " + convertBool(doorOpen);*/
         
         return variables;
     }
 
     public override string GetRoomCodeToDisplay()
     {
-        string code = "<b>if</b>(Red Button Pressed = <color=green>True</color>)\n\t <b>then</b> Door is Open = <color=green>True</color>";
-        return code;
+        return this.code;
     }
+    
 }
