@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -32,15 +33,14 @@ public class Room : MonoBehaviour
         mainCamera.transform.position = this.transform.position + new Vector3(0,0,-100);
         uiPanel.SetActive(true);
         
-
     }
 
-    void OnTriggerExit2D(Collider2D other)
+    /*void OnTriggerExit2D(Collider2D other)
     {
         this.transform.parent.gameObject.GetComponent<MainLogic>().setCurrentRoom(null);
         print("You leave the room number " + index);
         uiPanel.SetActive(false);
-    }
+    }*/
 
     public virtual void Event(string objName, bool activate)
     {  
