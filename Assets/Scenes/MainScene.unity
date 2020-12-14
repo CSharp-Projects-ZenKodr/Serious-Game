@@ -37560,7 +37560,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorAnimator: {fileID: 0}
-  uiPanel: {fileID: 0}
+  uiPanel: {fileID: 211979803}
 --- !u!61 &648393415
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38405,7 +38405,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorAnimator: {fileID: 0}
-  uiPanel: {fileID: 0}
+  uiPanel: {fileID: 775399707}
 --- !u!61 &770488329
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -38750,7 +38750,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorAnimator: {fileID: 0}
-  uiPanel: {fileID: 0}
+  uiPanel: {fileID: 2105779464}
 --- !u!61 &821563904
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -39213,7 +39213,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorAnimator: {fileID: 0}
-  uiPanel: {fileID: 0}
+  uiPanel: {fileID: 957235431}
 --- !u!61 &874553420
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40452,7 +40452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorAnimator: {fileID: 0}
-  uiPanel: {fileID: 0}
+  uiPanel: {fileID: 957235431}
 --- !u!61 &1047202780
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -40524,7 +40524,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorAnimator: {fileID: 0}
-  uiPanel: {fileID: 0}
+  uiPanel: {fileID: 775399707}
 --- !u!61 &1063378349
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -43182,7 +43182,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorAnimator: {fileID: 0}
-  uiPanel: {fileID: 0}
+  uiPanel: {fileID: 2105779464}
 --- !u!61 &1443123698
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44076,7 +44076,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorAnimator: {fileID: 0}
-  uiPanel: {fileID: 0}
+  uiPanel: {fileID: 211979803}
 --- !u!61 &1605582100
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44771,7 +44771,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorAnimator: {fileID: 0}
-  uiPanel: {fileID: 0}
+  uiPanel: {fileID: 2105779464}
 --- !u!61 &1670399695
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -44843,7 +44843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorAnimator: {fileID: 0}
-  uiPanel: {fileID: 0}
+  uiPanel: {fileID: 957235431}
 --- !u!61 &1671916898
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -48781,7 +48781,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorAnimator: {fileID: 0}
-  uiPanel: {fileID: 0}
+  uiPanel: {fileID: 211979803}
 --- !u!61 &1779259586
 BoxCollider2D:
   m_ObjectHideFlags: 0
